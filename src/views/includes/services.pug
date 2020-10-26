@@ -1,0 +1,37 @@
+-
+	var servicesList = [
+		{
+			img: "content/service-01",
+			text: "Монтаж (замена) инженерных сетей (электрики и сантехники)"
+		},
+		{
+			img: "content/service-02",
+			text: "Выравниванием всех стен, полов и потолков"
+		},
+		{
+			img: "content/service-03",
+			text: "Установка ламината, паркетной доски"
+		},
+		{
+			img: "content/service-04",
+			text: "Подбор материалов по выгодным ценам"
+		},
+		{
+			img: "content/service-05",
+			text: "Подбор мебели специально под Ваш ремонт"
+		},
+		{
+			img: "content/service-06",
+			text: "Разработка индивидуального дизайн-проекта"
+		}
+	]
+
+section.services
+	.services__container.container
+		h2.services__title.title Мы выполняем:
+		ul.services__list
+			each item in servicesList
+				li.services__item
+					.services__item-image
+						+image(item.img, "jpg", "types__item-img", item.text)
+					.services__item-text=item.text

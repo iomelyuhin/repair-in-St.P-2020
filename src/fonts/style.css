@@ -1,16 +1,4 @@
 @font-face {
-	font-family: 'PF Agora Sans Pro';
-	src: url('PFAgoraSansPro-Black.eot');
-	src: local('PFAgoraSansPro-Black'),
-			url('PFAgoraSansPro-Black.eot?#iefix') format('embedded-opentype'),
-			url('PFAgoraSansPro-Black.woff2') format('woff2'),
-			url('PFAgoraSansPro-Black.woff') format('woff'),
-			url('PFAgoraSansPro-Black.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'PF DinDisplay Pro';
 	src: url('PFDinDisplayPro-Light.eot');
 	src: local('PFDinDisplayPro-Light'),
@@ -19,5 +7,17 @@
 			url('PFDinDisplayPro-Light.woff') format('woff'),
 			url('PFDinDisplayPro-Light.ttf') format('truetype');
 	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PF Agora Slab Pro Black';
+	src: url('pfagoraslabpro-black.eot');
+	src: local('pfagoraslabpro-black'),
+			url('pfagoraslabpro-black.eot?#iefix') format('embedded-opentype'),
+			url('pfagoraslabpro-black.woff2') format('woff2'),
+			url('pfagoraslabpro-black.woff') format('woff'),
+			url('pfagoraslabpro-black.ttf') format('truetype');
+	font-weight: 900;
 	font-style: normal;
 }

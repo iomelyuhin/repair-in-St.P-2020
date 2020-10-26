@@ -1,0 +1,24 @@
+-
+	var typesArr = [
+		{
+			img: "content/types-01",
+			text: "Ремонт квартир под ключ"
+		},
+		{
+			img: "content/types-02",
+			text: "Ремонт коттеджей под ключ"
+		},
+		{
+			img: "content/types-03",
+			text: "Ремонт домов под ключ"
+		}
+	]
+section.types
+	.types__container.container
+		h2.types__title.title Мы выполняем:
+		ul.types__list
+			each item in typesArr
+				li.types__item
+					.types__item-image
+						+image(item.img, "jpg", "types__item-img", item.text)
+					.types__item-text=item.text

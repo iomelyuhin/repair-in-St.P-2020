@@ -192,6 +192,18 @@
 
 @font-face {
     font-family: 'PF Centro Serif Pro';
+    src: url('PFCentroSerifPro-Black.eot');
+    src: local('PF Centro Serif Pro Black'), local('PFCentroSerifPro-Black'),
+        url('PFCentroSerifPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSerifPro-Black.woff2') format('woff2'),
+        url('PFCentroSerifPro-Black.woff') format('woff'),
+        url('PFCentroSerifPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Serif Pro';
     src: url('PFCentroSerifPro-MediumItalic.eot');
     src: local('PF Centro Serif Pro Medium Italic'), local('PFCentroSerifPro-MediumItalic'),
         url('PFCentroSerifPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
@@ -258,6 +270,18 @@
 			url('PFAgoraSansPro-Black.woff2') format('woff2'),
 			url('PFAgoraSansPro-Black.woff') format('woff'),
 			url('PFAgoraSansPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PF Agora Slab Pro Black';
+	src: url('pfagoraslabpro-black.eot');
+	src: local('pfagoraslabpro-black'),
+			url('pfagoraslabpro-black.eot?#iefix') format('embedded-opentype'),
+			url('pfagoraslabpro-black.woff2') format('woff2'),
+			url('pfagoraslabpro-black.woff') format('woff'),
+			url('pfagoraslabpro-black.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
 }

@@ -1,0 +1,88 @@
+.services {
+	background-image: url(/assets/img/content/bg2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	min-height: 900px;
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+
+.services__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1100px;
+}
+
+.services__title {
+	margin-top: 100px;
+}
+
+.services__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	@include phones {
+		margin-top: 30px;
+	}
+}
+
+.services__item {
+	width: calc(100%/3 - 20px);
+	margin-right: 20px;
+	margin-bottom: 56px;
+	@include tablets-hor {
+		width: calc(50% - 20px);
+	}
+
+	@include phones {
+		width: 100%;
+		margin-right: 0;
+		display: flex;
+		margin-bottom: 20px;
+	}
+}
+
+.services__item-image {
+	@include phones {
+		max-width: 25%;
+	}
+}
+
+.services__item-text {
+	position: relative;
+	font-family: 'PF DinDisplay Pro';
+	font-weight: 300;
+	font-size: 21px;
+	padding: 5px 0 5px 50px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(90deg, rgba(248,240,251,1) 0%, rgba(255,255,255,1) 100%);
+	clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%);
+	
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 38Px;
+		clip-path: polygon(60% 0, 100% 0, 60% 100%, 20% 100%);
+		background-color: #cfa57f;
+		// background: url(/assets/img/content/sep-02.webp) no-repeat;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 38Px;
+		clip-path: polygon(40% 0%, 50% 0, 10% 100%, 0 100%);
+		background-color: #cfa57f;
+		// background: url(/assets/img/content/sep-02.webp) no-repeat;
+	}
+}

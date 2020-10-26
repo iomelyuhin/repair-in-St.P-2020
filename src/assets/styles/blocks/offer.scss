@@ -1,0 +1,109 @@
+.offer {
+	height: 505px;
+	width: 100%;
+	background-image: url(/assets/img/content/bg3.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@include tablets {
+		background-position: 62% center;
+		height: 550px;
+	}
+}
+
+.offer__container {
+	display: flex;
+	// justify-content: center;
+	@include tablets {
+		flex-direction: column;
+	}
+}
+
+.offer__title-wrap {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 180px;
+	margin-top: 127px;
+	
+	@include tablets {
+		width: 100%;
+		justify-content: center;
+		margin-top: 10px;
+		padding-right: 0;
+	}
+}
+
+.offer__title {
+	margin: 0;
+	padding: 0;
+	// margin-left: 100px;
+	flex-shrink: 0;
+	background-color: rgba(#fff, 0.7);
+	height: fit-content;
+	text-align: left;
+	max-width: fit-content;
+
+	@include tablets {
+		text-align: center;
+	}
+}
+
+.offer__form {
+	width: 50%;
+	flex-shrink: 0;
+	margin-left: 75px;
+	margin-top: 50px;
+	max-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tablets {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.offer__form-title {
+	font-family: 'PF Agora Slab Pro Black';
+	font-size: 32px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.offer__form-description {
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.offer__form-input-title {
+	font-family: 'PF DinDisplay Pro';
+	font-weight: 300;
+
+}
+
+.offer__form-lbl {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.offer__form-input {
+	border: 3px solid #ab9781;
+	font-size: 20px;
+	padding: 16px 11px;
+	width: 100%;
+}
+
+.offer__form-promise {
+	font-family: 'PF DinDisplay Pro';
+	text-align: center;
+	margin-bottom: 10px;
+}

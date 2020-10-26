@@ -1,3 +1,26 @@
+-
+	var heroBens = [
+		{
+			icon: "content/i1",
+			text: "Четко установленные сроки"
+		},
+		{
+			icon: "content/i2",
+			text: "Квалифицированные рабочие"
+		},
+		{
+			icon: "content/i3",
+			text: "Капитальная уборка после ремонта"
+		}
+	]
 section.hero
-	.hero__container.container
-		
+	.hero__container
+		.hero__title
+			h1.hero__title-text Недорогой ремонт квартир и офисов в СПб и Ленинградской области под ключ ЗА 30 ДНЕЙ
+		.hero__benefits
+			ul.hero__benefits-list
+				each ben in heroBens
+					li.hero__benefits-item
+						.hero__benefits-item-image
+							+image(ben.icon, "png", "hero__benefits-item-img", ben.text)
+						.hero__benefits-item-text=ben.text

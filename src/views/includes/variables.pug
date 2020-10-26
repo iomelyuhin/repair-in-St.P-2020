@@ -1,0 +1,54 @@
+-
+	var variablesArr = [
+		{
+			name: "СТАНДАРТНЫЙ",
+			list: [
+				"Монтаж (замена) инженерных сетей",
+				"Монтаж (замена) электрики и сантехники",
+				"Выравниванием всех стен",
+				"Выравниванием полов и потолков",
+			],
+			price: "от 4 000 руб./м<sup>2</sup>",
+		},
+		{
+			name: "ЕВРО",
+			list: [
+				"Монтаж (замена) инженерных сетей",
+				"Монтаж (замена) электрики и сантехники",
+				"Выравниванием всех стен",
+				"Выравниванием полов и потолков",
+				"Индивидуальный дизайн-проект",
+				"Использование дорогих материалов и технологий",
+			],
+			price: "от 5 000 руб./м<sup>2</sup>",
+		},
+		{
+			name: "ЭКСКЛЮЗИВНЫЙ",
+			list: [
+				"Монтаж (замена) инженерных сетей",
+				"Монтаж (замена) электрики и сантехники",
+				"Выравниванием всех стен",
+				"Выравниванием полов и потолков",
+				"Индивидуальный дизайн-проект",
+				"Использование дорогих материалов и технологий",
+				"Подбор мебели, авторский надзор за выполнением работ",
+			],
+			price: "от 8 000 руб./м<sup>2</sup>",
+		}
+	]
+
+section.variables
+	.variables__container.container
+		h2.variables__title.title Выберите вариант ремонта:
+		.variables__content
+			ul.variables__types
+				each variant in variablesArr
+					li.variables__type
+						.variables__type-title=variant.name
+						.variables__list-wrap
+							ul.variables__list
+								each item in variant.list
+									li.variables__item=item
+							.variables__price-wrap
+								.variables__price!=variant.price
+								button.variables__cta.cta(type="button") Оставить заявку

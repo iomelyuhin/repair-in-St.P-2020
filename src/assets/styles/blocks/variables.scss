@@ -1,0 +1,182 @@
+.variables {
+	min-height: 650px;
+	background-image: url(/assets/img/content/bg-roulet.webp);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: calc(100% - 10px);
+	background-size: contain;
+	position: relative;
+	
+	&::before {
+		content:"";
+		background-image: url(/assets/img/content/sep-bg.webp);
+		width: 100%;
+		min-height: calc(100% - 130px);
+		display: block;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: contain;
+		@include desktop {
+			min-height: calc(100% - 60px);
+
+		}
+	}
+	&::after {
+		content:"";
+		background-image: url(/assets/img/content/sep-bg.webp);
+		width: 100%;
+		min-height: calc(100% - 130px);
+		display: block;
+		top: 0;
+		position: absolute;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+		@include desktop {
+			min-height: calc(100% - 60px);
+
+		}
+	}
+}
+
+.variables__title {
+	padding-top: 70px;
+	margin-bottom: 60px;
+}
+
+.variables__content {
+	padding-bottom: 250px;
+
+	@include tablets {
+		padding-bottom: 70px;
+	}
+}
+
+.variables__types {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	@include tablets {
+		flex-wrap: wrap;
+	}
+}
+
+.variables__type {
+	background-color: #fff;
+	box-shadow: 0 3px 5px rgba(#000, 0.6);
+	width: calc(100% - 50px * 2 / 3);
+	margin-right: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 255px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@include tablets-hor {
+		width: calc(100% - 20px * 2 / 3);
+		margin-right: 20px;
+	}
+
+	@include tablets {
+		width: calc(50% - 20px);
+		max-width: initial;
+		min-height: 470px;
+		margin-bottom: 20px;
+	}
+
+	@include phones {
+		width: 100%;
+		margin-right: 0;
+		min-height: initial;
+	}
+}
+
+.variables__type-title {
+	height: calc(100% + 8px);
+	background: url(/assets/img/content/var-head.webp) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: #FFFFFF;
+	font-family: 'PF Agora Slab Pro Black';
+	font-size: 21px;
+	padding: 25px 0;
+}
+
+.variables__list-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tablets {
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	@include phones {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	@include phones-mini {
+		flex-direction: column;
+	}
+}
+
+.variables__list {
+	padding: 20px 17px;
+}
+
+.variables__item {
+	color: #000000;
+	font-family: 'PF DinDisplay Pro';
+	font-weight: 300;
+	font-size: 19px;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 10px;
+
+	&::before {
+		content: "";
+		display: flex;
+		width: 6Px;
+		height: 6Px;
+		background-color:#a7846a;
+		flex-shrink: 0;
+		margin-top: 8px;
+		margin-right: 10px;
+	}
+}
+
+.variables__price-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include phones {
+		min-width: 163Px;
+	}
+}
+
+.variables__price {
+	padding: 0 17px 20px 17px;
+	color: #000000;
+	font-family: 'PF Agora Slab Pro Black';
+	font-size: 19px;
+}
+
+.variables__cta {
+	margin-bottom: 20px;
+}

@@ -4,33 +4,36 @@
 	justify-content: flex-end;
 
 	&.fix {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background-color: rgba(#fff, 0.9);
-		padding: 10px 0;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-
-		.contacts__phone {
-			text-align: center;
-			font-size: 16px;
-		}
-
-		.contacts__callback {
-			// display: none;
-			margin: 0;
-			padding: 5px 7px;
-			margin-left: 10px;
+		@include phones {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: rgba(#fff, 0.9);
+			padding: 10px 0;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+	
+			.contacts__phone {
+				text-align: center;
+				font-size: 16px;
+			}
+	
+			.contacts__callback {
+				// display: none;
+				margin: 0;
+				padding: 5px 7px;
+				margin-left: 10px;
+			}
 		}
 	}
 }
 
 .contacts__phone {
 	text-align: right;
-	font-family: "PF Agora Sans Pro";
+	font-family: "PF Agora Slab Pro Black";
 	font-size: 27px;
 	font-weight: 900;
 	color: #000;
