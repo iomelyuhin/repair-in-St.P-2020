@@ -1,0 +1,11 @@
+header.header
+	.header__container.container
+		.header__logo.header__logo--logo
+			a.logo(href="/")
+				.logo__image
+					+image("content/logo", "png", "logo__img", "Логотип компании")
+				.logo__text Ремонт квартир офисов <br />коттеджей и домов под ключ
+		.header__contacts.header__contacts--contacts
+			.contacts
+				a.contacts__phone(href="tel:89117189198") 8 (911) 718-91-98
+				button.contacts__callback(type="button") Заказать обратный звонок

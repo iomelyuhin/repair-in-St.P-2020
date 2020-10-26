@@ -1,0 +1,59 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	&.fix {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(#fff, 0.9);
+		padding: 10px 0;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.contacts__phone {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		.contacts__callback {
+			// display: none;
+			margin: 0;
+			padding: 5px 7px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.contacts__phone {
+	text-align: right;
+	font-family: "PF Agora Sans Pro";
+	font-size: 27px;
+	font-weight: 900;
+	color: #000;
+	transition: 0.3s;
+
+	@include tablets {
+		font-size: 24px;
+	}
+}
+
+.contacts__callback {
+	padding: 10px 16px 10px 22px;
+	background: linear-gradient(0deg, rgba(255,175,37,1) 0%, rgba(255,175,37,1) 35%, rgba(255,240,98,1) 100%);
+	border-radius: 3px;
+	border: none;
+	border-bottom: 2px solid #ce7400;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: 'PF DinDisplay Pro';
+	margin-top: 10px;
+
+
+	&:hover {
+		background: linear-gradient(0deg, rgba(255,147,0,1) 0%, rgba(255,234,63,1) 100%);
+	}
+}
